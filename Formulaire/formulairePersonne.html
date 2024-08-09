@@ -1,0 +1,31 @@
+<?php
+
+$corps =<<<EOT
+  <form method="post" action="index.php?action={$action}&idP={$idP}" name="form_user" style="tex-align:center;">
+  <label>Nom</label>
+  <input type="text" name="nom" size="" value="{$nom}" placeholder="Sy"  style="background-color: white ;">
+  <span class="w3-text-red">{$erreur["nom"]}</span><br>
+    
+  <label>Prénom</label>
+  <input type="text" name="prenom" size="" value="{$prenom}" placeholder="Omar" style="background-color: white ;">
+  <span class="w3-text-red">{$erreur["prenom"]}</span><br>
+    <label>Date de Naissance</label>
+  <input type="text" name="dateN" size="" value="{$dateN}" placeholder="aaaa-mm-jj" style="background-color: white ;">
+  <span class="w3-text-red">{$erreur["dateN"]}</span><br>
+  
+  <label>Lieu de naissance</label>
+  <input type="text" name="LieuN" size="" value="{$LieuN}" placeholder="Paris" style="background-color: white ;">
+  <span class="w3-text-red">{$erreur["LieuN"]}</span><br>
+  
+  <label>Film connu</label>
+  <input type="text" name="Film" size="" value="{$Film}" placeholder="Intouchables" style="background-color: white ;">
+  <span class="w3-text-red">{$erreur["Film"]}</span><br><br> 
+      
+  <input type="submit" name="user_valider" value="Valider" size=""  style="background-color: white ; width:20%;border-radius: 10px;">
+
+      
+</form>
+
+EOT;
+$zonePrincipale=$corps ;
+?>
